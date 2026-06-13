@@ -1,22 +1,31 @@
-```html
 <!DOCTYPE html>
-<html>
+<html lang="bg">
+
 <head>
-  <title>ForgeBit</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ForgeBit.eu</title>
 
 <style>
 
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     font-family:Arial,sans-serif;
     color:white;
 
     background:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
     url('under-construction-28973.png');
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
 
     height:100vh;
 
@@ -25,25 +34,115 @@ body{
     align-items:center;
 
     text-align:center;
+
+    overflow:hidden;
 }
 
 .container{
-    max-width:700px;
+
+    backdrop-filter:blur(6px);
+
+    background:rgba(0,0,0,0.35);
+
+    padding:50px 60px;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.5);
+
+    max-width:750px;
 }
 
 h1{
-    font-size:64px;
-    margin-bottom:10px;
+    font-size:72px;
+    margin-bottom:15px;
+
+    letter-spacing:2px;
+
+    text-shadow:
+    0 0 20px rgba(255,255,255,0.25);
 }
 
 h2{
     font-weight:normal;
-    color:#cccccc;
+    color:#d0d0d0;
+
+    font-size:32px;
+
+    margin-bottom:35px;
 }
 
-p{
-    color:#dddddd;
-    font-size:20px;
+.divider{
+    width:120px;
+    height:3px;
+
+    background:#f4b400;
+
+    margin:0 auto 35px auto;
+
+    border-radius:10px;
+}
+
+.main-text{
+    font-size:28px;
+
+    color:#ffd24d;
+
+    margin-bottom:30px;
+
+    font-weight:bold;
+}
+
+.services{
+
+    font-size:22px;
+
+    color:#e0e0e0;
+
+    line-height:1.8;
+}
+
+.services span{
+    color:#f4b400;
+}
+
+.footer{
+
+    margin-top:40px;
+
+    color:#aaaaaa;
+
+    font-size:16px;
+
+    opacity:0.8;
+}
+
+@media (max-width:768px){
+
+    .container{
+        margin:20px;
+        padding:35px 25px;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    .main-text{
+        font-size:22px;
+    }
+
+    .services{
+        font-size:18px;
+    }
+
 }
 
 </style>
@@ -57,14 +156,27 @@ p{
 
 <h2>Smart Tech & Електро</h2>
 
-<p>Website under construction</p>
+<div class="divider"></div>
 
-<p>
-Smart Home • Wi-Fi • Automation
+<p class="main-text">
+Website under construction
 </p>
+
+<p class="services">
+
+<span>Smart Home</span>
+• Wi-Fi
+• <span>Automation</span>
+• CCTV
+• Smart Tech Solutions
+
+</p>
+
+<div class="footer">
+Blagoevgrad • Bulgaria
+</div>
 
 </div>
 
 </body>
 </html>
-```
