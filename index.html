@@ -1,81 +1,319 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ForgeBit - Smart Home, Automation & Electrical Services</title>
+
+<meta name="description" content="Електро услуги, Smart Home, Wi-Fi мрежи, видеонаблюдение и автоматизация в Благоевград и региона.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    background:
+        linear-gradient(
+            rgba(15,15,15,0.85),
+            rgba(15,15,15,0.92)
+        ),
+        url("https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=1600");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+}
+
+.container{
+    max-width:1100px;
+    margin:0 auto;
+    padding:40px 20px;
+}
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero-box{
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(10px);
+    padding:50px;
+    border-radius:24px;
+    max-width:900px;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.subtitle{
+    font-size:1.4rem;
+    color:#f5b301;
+    margin-bottom:20px;
+}
+
+.description{
+    font-size:1.15rem;
+    color:#ddd;
+    line-height:1.8;
+}
+
+.buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-primary{
+    background:#f5b301;
+    color:black;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    border:1px solid #f5b301;
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:#f5b301;
+    color:black;
+}
+
+.section{
+    padding:70px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:40px;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:16px;
+    padding:25px;
+}
+
+.card h3{
+    color:#f5b301;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+.about{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    line-height:1.9;
+    color:#ddd;
+}
+
+.footer{
+    text-align:center;
+    padding:50px 0;
+    color:#aaa;
+}
+
+.footer a{
+    color:#f5b301;
+    text-decoration:none;
+}
+
+.contact{
+    font-size:1.1rem;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    .hero-box{
+        padding:30px;
+    }
+
+    .subtitle{
+        font-size:1.1rem;
+    }
+
+}
+
+</style>
+
+</head>
 <body>
 
 <div class="container">
 
-    <h1>ForgeBit</h1>
+    <section class="hero">
 
-    <h2>Smart Home • Automation • Electrical Services</h2>
+        <div class="hero-box">
 
-    <div class="divider"></div>
+            <h1>ForgeBit</h1>
 
-    <p class="main-text">
-        Модерни технически решения за дома и малък бизнес
-    </p>
+            <div class="subtitle">
+                Smart Home • Automation • Electrical Services
+            </div>
 
-    <p class="services">
-        ⚡ Електро инсталации<br>
-        🏠 Smart Home решения<br>
-        📡 Wi-Fi и мрежи<br>
-        📹 Видеонаблюдение<br>
-        🤖 Автоматизация и AI
-    </p>
+            <div class="description">
+                Модерни технически решения за дома и малък бизнес.
+                Електро услуги, Smart Home системи, Wi-Fi мрежи,
+                видеонаблюдение и автоматизация.
+            </div>
 
-    <div class="buttons">
+            <div class="buttons">
 
-        <a
-            class="btn primary"
-            href="https://t.me/ForgeBitAssistantBot"
-            target="_blank">
+                <a
+                    class="btn btn-primary"
+                    href="https://t.me/ForgeBitAssistantBot"
+                    target="_blank">
+                    🤖 AI Консултант
+                </a>
 
-            🤖 Безплатен AI Консултант
+                <a
+                    class="btn btn-secondary"
+                    href="mailto:info@forgebit.eu">
+                    📧 Изпрати запитване
+                </a>
 
-        </a>
+            </div>
 
-        <a
-            class="btn secondary"
-            href="mailto:info@forgebit.eu">
+        </div>
 
-            📧 Изпрати запитване
+    </section>
 
-        </a>
+    <section class="section">
 
-    </div>
+        <h2 class="section-title">Услуги</h2>
 
-    <div class="about">
+        <div class="services-grid">
 
-        <h3>Какво предлагаме</h3>
+            <div class="card">
+                <h3>⚡ Електро услуги</h3>
+                <p>
+                    Електро инсталации, табла,
+                    защити, осветление и диагностика.
+                </p>
+            </div>
 
-        <p>
-            ForgeBit комбинира електро услуги,
-            Smart Home технологии,
-            видеонаблюдение и автоматизация
-            в едно модерно решение.
-        </p>
+            <div class="card">
+                <h3>🏠 Smart Home</h3>
+                <p>
+                    Home Assistant, Tuya,
+                    интелигентно управление и автоматизация.
+                </p>
+            </div>
 
-    </div>
+            <div class="card">
+                <h3>📡 Wi-Fi и мрежи</h3>
+                <p>
+                    Изграждане и оптимизация
+                    на домашни и офис мрежи.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📹 Видеонаблюдение</h3>
+                <p>
+                    IP камери, CCTV решения
+                    и дистанционен достъп.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Automation & AI</h3>
+                <p>
+                    Telegram ботове,
+                    Home Assistant и бизнес автоматизация.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🔧 Технически решения</h3>
+                <p>
+                    Индивидуални проекти
+                    според нуждите на клиента.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <h2 class="section-title">За ForgeBit</h2>
+
+        <div class="about">
+
+            ForgeBit комбинира традиционни електро услуги
+            със съвременни технологии за автоматизация,
+            Smart Home системи и AI решения.
+
+            Целта е да предложим практични,
+            надеждни и модерни решения
+            за дома и малкия бизнес.
+
+        </div>
+
+    </section>
 
     <div class="footer">
 
-        📍 Благоевград, България
+        <div class="contact">
+            📍 Благоевград, България
+            <br><br>
+            📧 info@forgebit.eu
+        </div>
 
-        <br><br>
+        <br>
 
-        📧 info@forgebit.eu
-
-        <br><br>
-
-        <a href="privacy-policy.html">
-            Privacy Policy
-        </a>
-
-        &nbsp;|&nbsp;
-
-        <a href="data-deletion.html">
-            Data Deletion
-        </a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        |
+        <a href="data-deletion.html">Data Deletion</a>
 
     </div>
 
 </div>
 
 </body>
+</html>
